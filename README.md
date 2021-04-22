@@ -38,7 +38,7 @@ You must have the AWS CLIv2 installed.
 | email\_addresses\_list | List of email addresses. | `list(string)` | n/a | yes |
 | sns\_topic | Configuration for new SNS topic. If you define a policy use jsonencode() to pass the value. | <pre>object({<br>    topic_name   = string<br>    display_name = string<br>    policy       = any<br>    kms_key_id   = string<br>  })</pre> | `null` | no |
 | sns\_topic\_arn | SNS topic arn. | `string` | `""` | no |
-| tags | Tags to apply | `map(string)` | `{}` | no |
+| tags | Tags to apply. | `map(string)` | `{}` | no |
 
 ## Outputs
 
