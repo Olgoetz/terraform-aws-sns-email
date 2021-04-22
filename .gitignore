@@ -1,0 +1,8 @@
+*.tfstate
+*.tfstate.*
+*.hcl
+.terraform/
+*.terraform/
+myplan
+.idea/
+*bak
