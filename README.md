@@ -21,13 +21,15 @@ You must have the AWS CLIv2 installed.
 | Name | Version |
 |------|---------|
 | terraform | >= 0.14 |
+| aws | >= 3.37.0 |
+| null | >= 3.1.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
-| null | n/a |
+| aws | >= 3.37.0 |
+| null | >= 3.1.0 |
 
 ## Inputs
 
