@@ -13,6 +13,8 @@ You must have the AWS CLIv2 installed.
 
 ## Examples
 
+Either pass an existing AWS SNS topic arn or create a new one by this module as well.
+
 [2 Examples](./examples/main.tf)
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
@@ -36,7 +38,7 @@ You must have the AWS CLIv2 installed.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | email\_addresses\_list | List of email addresses. | `list(string)` | n/a | yes |
-| sns\_topic | Configuration for new SNS topic. If you define a policy use jsonencode() to pass the value. | <pre>object({<br>    topic_name   = string<br>    display_name = string<br>    policy       = any<br>    kms_key_id   = string<br>  })</pre> | `null` | no |
+| sns\_topic | Configuration for new SNS topic. If you define a policy use jsonencode() to pass the value. | <pre>object({<br>    topic_name   = string<br>    display_name = string<br>    policy       = any<br>    kms_key_id   = string<br>  })</pre> | <pre>{<br>  "display_name": "myDisplayName",<br>  "kms_key_id": "myKmsKeyId",<br>  "policy": "myPolicy",<br>  "topic_name": "myTopicName"<br>}</pre> | no |
 | sns\_topic\_arn | SNS topic arn. | `string` | `""` | no |
 | tags | Tags to apply | `map(string)` | `{}` | no |
 

@@ -17,7 +17,12 @@ variable "sns_topic" {
     kms_key_id   = string
   })
   description = "Configuration for new SNS topic. If you define a policy use jsonencode() to pass the value."
-  default     = null
+  default = {
+    topic_name   = "myTopicName"
+    display_name = "myDisplayName"
+    policy       = "myPolicy"
+    kms_key_id   = "myKmsKeyId"
+  }
 }
 
 variable "sns_topic_arn" {
