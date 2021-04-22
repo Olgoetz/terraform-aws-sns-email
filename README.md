@@ -7,7 +7,7 @@ A Terraform module to subscribe to an email endpoint by using an existing or cre
 You must have the AWS CLIv2 installed.
 
 ## Features
-- [x] Subscribe to existing AWS SNS topic
+- [x] Subscribe to an existing AWS SNS topic
 - [x] Create a new AWS SNS topic and subscribe to it
 - [x] Several email addresses may be passed
 
