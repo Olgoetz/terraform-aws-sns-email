@@ -20,7 +20,7 @@ variable "sns_topic" {
   default = {
     topic_name   = "myTopicName"
     display_name = "myDisplayName"
-    policy       = "myPolicy"
+    policy       = null
     kms_key_id   = "myKmsKeyId"
   }
 }
