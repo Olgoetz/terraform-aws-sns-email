@@ -40,7 +40,7 @@ Either pass an existing AWS SNS topic arn or create a new one by this module as 
 | email\_addresses\_list | List of email addresses. | `list(string)` | n/a | yes |
 | sns\_topic | Configuration for new SNS topic. If you define a policy use jsonencode() to pass the value. | <pre>object({<br>    topic_name   = string<br>    display_name = string<br>    policy       = any<br>    kms_key_id   = string<br>  })</pre> | <pre>{<br>  "display_name": "myDisplayName",<br>  "kms_key_id": "myKmsKeyId",<br>  "policy": null,<br>  "topic_name": "myTopicName"<br>}</pre> | no |
 | sns\_topic\_arn | SNS topic arn. | `string` | `""` | no |
-| tags | Tags to apply | `map(string)` | `{}` | no |
+| tags | Tags to apply. | `map(string)` | `{}` | no |
 
 ## Outputs
 
